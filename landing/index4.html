@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+    <link rel="stylesheet" href="index4.css">
+    <script rel="stylesheet" src="https://kit.fontawesome.com/eada5767a0.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    
+    <section>
+        <div class="circle"></div>
+        <header>
+            <img src="logodailybox2.png" alt="logodailybox" width="170px" height="150px">
+            <ul>
+                <li><a href="./index3.html">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">What's New</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+
+        <div class="content">
+            <div class="textbox">
+                <h2>Dailybox<span>Group</span></h2>
+                <p>We are a multi-brand online restaurant startup company. Our line consists of Dailybox (rice box serving comfort food), Dailymeals (ready-to-heat food), Shirato (a mix of sushi and burrito) and Breadlife (the well-known bread brand in Indonesia). We serve more than 20 menus.</p>         
+                <a href="#">Learn More</a>
+            </div> 
+            <div class="imgbox">
+                <img src="Ayam-Woku.png" class="Ayam-Woku" width="450px" height="500px">
+            </div>
+            <ul class="sosmed">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+            </ul>
+            <ul class="thumb">
+                <li><img src="Ayam-Woku.png" alt="Ayam-Woku" width="150px" height="100px" onclick="imgSlider('Ayam-Woku.png');changeCircleColor('#fc4908')"></li>
+                <li><img src="Buttersoy.png" alt="Buttersoy" width="150px" height="100px" onclick="imgSlider('Buttersoy.png');changeCircleColor('#8B4513')"></li>
+                <li><img src="Gochujang.png" alt="Gochujang" width="150px" height="100px" onclick="imgSlider('Gochujang.png');changeCircleColor('#8B0000')"></li>
+            </ul>
+        </div>
+    </section>
+
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.Ayam-Woku').src = anything;
+        }
+
+        function changeCircleColor(color){
+            let circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+    </script>
+    
+</body>
+</html>

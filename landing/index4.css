@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+section{
+    position: relative;
+    width: 100%;
+    min-height: 50vh;
+    padding-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+}
+
+header{
+    position: absolute;
+    top: -25px;
+    left: 0;
+    width: 90%;
+    padding: 10px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 25px;
+}
+
+header ul li a{
+    color: black;
+}
+
+header ul li a:hover{
+    background-color: rgb(252, 73, 9);
+    color: #fff;
+    border-radius: 10px;
+    padding: 5px 1px;
+}
+
+.content{
+    position: relative;
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 40px;
+}
+
+h2{
+    font-size: 4em;
+    font-weight: 500;
+    padding-bottom: 50px;
+}
+
+.textbox{
+    line-height: 25px;
+    word-spacing: 2px;
+    text-align: justify;
+    position: relative;
+    max-width: 600px;
+}
+
+.textbox span{
+    color:rgb(252, 73, 8);
+    font-size: 1.1em;
+    font-weight: 700;
+    text-shadow: 2px 1.5px rgba(165, 44, 0, 0.637);
+}
+
+.textbox a{
+    display: inline-block;
+    margin-top: 20px;
+    background-color: rgb(250, 99, 44);
+    color: #fff;
+    border-radius: 10px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 5px 15px;
+    margin-top: 5px;
+}
+
+.textbox a:hover{
+    background-color: rgb(252, 73, 8);
+}
+
+.imgbox{
+    width: 100px;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 100px;
+}
+
+.sosmed{
+    position: absolute;
+    right: -140px;
+    font-size: 25px;
+    margin-top: 25px;
+}
+.sosmed li a{
+    color: #fff;
+}
+.sosmed li{
+    margin-top: 25px;
+    list-style: none;
+}
+
+.thumb{
+    position: absolute;
+    left: 25%;
+    display: flex;
+    bottom: 20px;
+}
+
+.thumb li{
+    list-style: none;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.thumb li:hover{
+    transform: translateY(-20px);
+}
+
+.circle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(252, 73, 8);
+    clip-path: circle(600px at right 850px);
+}

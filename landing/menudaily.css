@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+.navbar{
+    position: fixed;
+    width: 100%;
+    background-color: black;
+}
+
+ul li{
+    display: inline-block;
+    padding: 40px 90px;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+a{  
+    color: white;
+}
